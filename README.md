@@ -29,12 +29,12 @@ Kezdeti belépési adatok
     
 Fogadási tábla létrehozása
 
-create table fogadasok(
-fogadas_id int not null generated always as identity,
-username varchar(50),
-talalatszama varchar(50),
-Primary key(fogadas_id)
-);
+    create table fogadasok(
+    fogadas_id int not null generated always as identity,
+    username varchar(50),
+    talalatszama varchar(50),
+    Primary key(fogadas_id)
+    );
 
 Nehézség volt a projekt során, hogy lehet átadni taglib kódnak egy java kódban létrehozott változót. Amit végül a request.setAttribute(’változó’, valtozonev) kóddal sikerült megoldani.
 
